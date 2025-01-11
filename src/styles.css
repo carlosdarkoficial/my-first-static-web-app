@@ -1,6 +1,9 @@
 :root {
   --primary-color: #b21abd;
   --icon-color: #750f42;
+  --background-color: #000;
+  --text-color: #fff;
+  --footer-background-color: #0005;
 }
 
 html {
@@ -11,8 +14,8 @@ body {
   display: grid;
   grid-template-areas: 'content';
   font-family: 'Ubuntu', sans-serif;
-  color: #fff;
-  background-color: #000;
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 main {
@@ -41,7 +44,7 @@ section {
 footer {
   height: 50px;
   width: 100%;
-  background-color: #0005;
+  background-color: var(--footer-background-color);
   grid-area: content;
   place-self: end center;
   display: grid;
@@ -56,3 +59,13 @@ footer {
     visibility: hidden;
   }
 }
+
+/* Error Handling (Example - Using CSS Variables) */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto; /* Disable smooth scrolling for reduced motion */
+  }
+}
+
+/* You can add more error handling rules here, 
+   such as fallback values for missing images or fonts. */

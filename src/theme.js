@@ -19,6 +19,7 @@
   const watchVideo = document.getElementById('watchVideo');
   watchVideo.addEventListener('click', () => {
     // Here you would typically implement a video modal
-    alert('Video feature coming soon!');
+    window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+    });
   });
 });
